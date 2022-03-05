@@ -1,0 +1,4 @@
+{% extends "vacancy/vacancies.html" %}
+{% load ru_pluralize %}
+{% block h1 %} {{ specialty.code }} {% endblock %}
+{% block count %} {{ specialty.vacancies.count|ru_pluralize:"вакансия,вакансии,вакансий" }} {% endblock %}
